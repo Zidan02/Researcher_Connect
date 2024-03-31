@@ -49,7 +49,7 @@
                     <div class="row text-center d-flex justify-content-center pt-5">
                         <!-- Grid column -->
                         <div class="col-md-1 ">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">About</a>
                             </h6>
                         </div>
@@ -57,7 +57,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-1 ml-1">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">Docs</a>
                             </h6>
                         </div>
@@ -65,7 +65,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-1 ml-1">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">Blog</a>
                             </h6>
                         </div>
@@ -73,7 +73,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-2 ml-1">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">Community</a>
                             </h6>
                         </div>
@@ -81,18 +81,18 @@
 
                         <!-- Grid column -->
                         <div class="col-md-2 ml-1">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">Verify
                                     Authorship</a>
                             </h6>
                         </div>
                         <div class="col-md-2 ml-1">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">Leaderboard</a>
                             </h6>
                         </div>
                         <div class="col-md-2 ml-1">
-                            <h6 class="text-uppercase font-weight-bold fs-5">
+                            <h6 class="text-uppercase font-weight-bold fs-6">
                                 <a href="#!" class="text" style="text-decoration: none; color:#959191">Jobs</a>
                             </h6>
                         </div>
