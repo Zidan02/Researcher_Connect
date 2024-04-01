@@ -2,19 +2,40 @@ function changeContent(type) {
     var contentDiv = document.getElementById('content');
     switch (type) {
       case 'post':
-        contentDiv.innerHTML = "<h2>Post Content</h2><p>This is the content for posts.</p>";
+
+        fetch('/SAD-SIUM/post.html')
+        .then(response => response.text())
+        .then(data => contentDiv.innerHTML = data)
+        .catch(error => console.error('Failed to load HTML content:', error));
+       
         break;
-      case 'paper':
-        contentDiv.innerHTML = "<h2>Paper Content</h2><p>This is the content for papers.</p>";
+      
+        case 'paper':
+          fetch('/SAD-SIUM/paper.html')
+          .then(response => response.text())
+          .then(data => contentDiv.innerHTML = data)
+          .catch(error => console.error('Failed to load HTML content:', error));
         break;
-      case 'question':
-        contentDiv.innerHTML = "<h2>Question Content</h2><p>This is the content for questions.</p>";
+      
+        case 'question':
+          fetch('/SAD-SIUM/question.html')
+          .then(response => response.text())
+          .then(data => contentDiv.innerHTML = data)
+          .catch(error => console.error('Failed to load HTML content:', error));
         break;
-      case 'job post':
-        contentDiv.innerHTML = "<h2>Job post</p>";
+      
+        case 'job post':
+          fetch('/SAD-SIUM/job.html')
+          .then(response => response.text())
+          .then(data => contentDiv.innerHTML = data)
+          .catch(error => console.error('Failed to load HTML content:', error));
         break;
-      case 'requisition post':
-        contentDiv.innerHTML = "<h2>Job requisition post</p>";
+      
+        case 'requisition post':
+          fetch('/SAD-SIUM/requisitionpost.html')
+          .then(response => response.text())
+          .then(data => contentDiv.innerHTML = data)
+          .catch(error => console.error('Failed to load HTML content:', error));
         break;
       default:
         break;
