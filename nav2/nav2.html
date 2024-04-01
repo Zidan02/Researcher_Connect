@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav2</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="nav2.js"></script>
+  <link rel="stylesheet" href="nav2.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row d-flex">
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('post')">Post</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('paper')">Paper</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('question')">Question</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('job post')">Job Post</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('requisition post')">Requisition Post</button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div id="content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
