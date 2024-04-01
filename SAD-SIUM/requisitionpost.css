@@ -1,0 +1,9 @@
+.card-header {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .icon-img {
+    width: 30px; /* Adjust the width of the icon image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the space between icon and text */
+  }
