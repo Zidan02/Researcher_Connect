@@ -12,6 +12,8 @@
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="/nav2/nav2.js"></script>
+        <link rel="stylesheet" href="nav2/nav2.css">
 </head>
 
 <body>
@@ -78,6 +80,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
     </script>
-</body>
 
+<div class="container mt-5">
+    <div class="row d-flex">
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('post')">Post</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('paper')">Paper</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('question')">Question</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('job post')">Job Post</button>
+      </div>
+      <div class="col-md">
+        <button class="btn btn-primary btn-block btn-sm butt0n" onclick="changeContent('requisition post')">Requisition Post</button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div id="content">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
