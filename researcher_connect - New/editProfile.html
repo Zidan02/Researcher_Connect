@@ -267,7 +267,12 @@
                             <div class="card-header text-light" style="background-color: #1E3668;">Account Details</div>
                             <div class="card-body">
                                 <form>
-                                    <!-- Form Group (username)-->
+                                    <!-- About yourself -->
+                                    <div class="form-outline form-white mb-3">
+                                        <label for="formFile" class="form-label">Upload Profile Picture</label>
+                                        <input class="form-control" type="file" id="formFile" accept="image/*">
+                                    </div>
+                                    
 
                                     <!-- Form Row-->
                                     <div class="row gx-3 mb-3">
@@ -347,15 +352,11 @@
                                                 placeholder="Enter your twitter address" value="">
                                         </div>
                                     </div>
-                                    <!-- About yourself -->
-                                    <div class="mb-3">
-                                        <label class="small mb-1" for="inputAbout">About</label>
-                                        <textarea class="form-control" id="inputAbout" type="text"
-                                            placeholder="About yourself" value=""></textarea>
-                                    </div>
+                                    
                                     <!-- Save changes button-->
                                     <button class="btn text-light" type="button" style="background-color: #1E3668;">Save
                                         changes</button>
+                                        
                                 </form>
                             </div>
                         </div>
