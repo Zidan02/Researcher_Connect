@@ -54,12 +54,14 @@
 
         input:focus,
         .form-control:focus {
+
+            background-color: #1E3668;
+            color: #ACDDFD;
             outline: none;
             box-shadow: none;
-            /* Also remove the box shadow if present */
-        }
 
-        
+
+        }
     </style>
 </head>
 
@@ -67,7 +69,7 @@
     <!-- Your HTML code for the login form -->
 
     <div class="header">
-        
+
 
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Error!</strong> ' . Show Error . '
@@ -91,7 +93,7 @@
     </div>
 
     <section class="vh-100 gradient-custom">
-        <form action="signin.php" method="post">
+        <form action="" method="post">
             <div class="container py-5 h-100 ">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-10 col-md-8 col-lg-6 col-xl-5">
@@ -133,10 +135,11 @@
 
                                     </div>
 
-                                    
+
                                     <div class="fs-6 mb-5 text-end mt-1">
-                                        
-                                        <a href="" class="text-decoration-none" style="color: #ACDDFD;">Forgot Password</a>
+
+                                        <a href="" class="text-decoration-none" style="color: #ACDDFD;">Forgot
+                                            Password</a>
                                     </div>
 
 
@@ -162,7 +165,7 @@
                                 </div>
 
                                 <div class="pt-5">
-                                    <p class="mb-0">Don’t have an account? <a href="signin.html"
+                                    <p class="mb-0">Don’t have an account? <a href="signup.html"
                                             class="text-50 text-uppercase fw-semibold text-decoration-none text-light"
                                             style="color: #393939;">Sign Up now!</a>
                                     </p>
