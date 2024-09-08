@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Navbar</title>
     <style>
         .list {
             column-gap: 1vw;
@@ -46,7 +46,7 @@
                 id="navbarNavDropdown" style="margin-left: 5%; width:auto; margin-top: -5%;">
                 <ul class="navbar-nav list">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="userHome.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -164,90 +164,15 @@
 
                     <!-- userimg start -->
                     <form method="post">
-                        <div class="card rounded-4 border-0 align-items-center mt-4">
-                            <img src="profile\default.png" class="card-img-top img-fluid " alt="img"
-                                style=" width: 40%; height: 40%; margin-left: -15%;">
-                            <div class="card-body d-flex flex-column   rounded-4">
-                                <p class="card-text fw-semibold" style="color: #1E3668;"> <i>Mansora Akter Bithe </i>
-                                </p>
-                                <p class="card-text text-left" style="color: #595858; margin-top: -10%;">Engineer</p>
-                            </div>
-                        </div>
+
                         <!-- userimage end -->
                         <!-- user description start -->
                         <div class="card text-left text-secondary rounded-4 border-0">
-                            <div class="card-body text-left align-item-center rounded-4"
-                                style=" background-color: white; margin-top: 1rem; margin-bottom: 1rem;">
-                                <div class="d-flex"><img src="img\network.png" class="img-fluid"
-                                        style="width: 15%; height: 25%; padding-top: 5%;" alt="network">
-                                    <p class="card-text fs-5 fw-semibold" style="margin-left: 10%; color: #1E3668;">
-                                        Network</p>
-                                </div>
-                                <div class="d-flex mt-4">
-                                    <p class="card-text fs-5 " style="color: #1E3668;">
-                                        Followers</p>
-                                    <p class="card-text fs-5 " style="margin-left: 20%; color: #1E3668;">
-                                        10</p>
-                                </div>
-                                <div class="d-flex">
-                                    <p class="card-text fs-5 " style="color: #1E3668;">
-                                        Followings</p>
-                                    <p class="card-text fs-5 " style="margin-left: 20%; color: #1E3668;">
-                                        2</p>
-                                </div>
-                                
 
-                            </div>
 
-                            <div class="card-body rounded-4" style=" background-color: white;  margin-bottom: 1rem;">
-                                <div class="form-group">
-                                    <div class="contact">
-                                        <div class="phone d-flex" style="margin-top: 1.5rem;">
-                                            <img src="img\phnic.png" alt="phnic" class="img-fluid rounded-5"
-                                                style="height: 2.5rem; width: 2.5rem;">
-                                            <input type="tel" class="form-control border-0 shadow rounded-2"
-                                                name="phone" id="phone" placeholder="+8801XXXXXXXXX"
-                                                style="padding: 0.5rem; font-size: 0.7rem;" readonly>
 
-                                        </div>
-                                        <hr class="border-2">
-                                        <div class="email d-flex" style="margin-top: 1rem;">
-                                            <img src="img\emic.png" alt="emic" class="img-fluid rounded-5"
-                                                style="height: 2.5rem; width: 2.5rem;">
-                                            <input type="email" class="form-control border-0 shadow rounded-2"
-                                                name="email" id="email" placeholder="Enter your email address"
-                                                style="padding: 0.5rem; font-size: 0.7rem;" readonly>
-
-                                        </div>
-                                        <hr class="border-2">
-                                    </div>
-                                </div>
-                            </div>
                             <!-- user contact end -->
-                            <!-- user social media start -->
-                            <section class="mb-4 bg-light">
-                                <!-- Facebook -->
-                                <a href=""><img src="img\fb-land.png" alt="Facebook" class="shadow img-fluid "
-                                        style="width: 13%; margin-left: 5%;"></a>
 
-                                <!-- Instagram -->
-                                <a href=""><img src="img\insta-land.png" alt="Instagram" class="shadow img-fluid"
-                                        style="width: 13%; margin-left: 5%;"></a>
-
-                                <!-- Linkedin -->
-                                <a href=""><img src="img\link-land.png" alt="Linkedin" class="shadow img-fluid"
-                                        style="width: 13%; margin-left: 5%;"></a>
-
-                                <!-- Twitter -->
-                                <img src="img\twit-land.png" alt="Facebook" class="shadow img-fluid"
-                                    style="width: 13%; margin-left: 5%;">
-                                <!-- Github -->
-                                <img src="img\github.png" alt="Github" class="shadow img-fluid"
-                                    style="width: 13%; margin-left: 5%;">
-
-
-                            </section>
-                            <!-- user social media end -->
                         </div>
                         <!-- user description end -->
                     </form>
@@ -276,64 +201,20 @@
 
 
                     <!-- Parent element to group collapses -->
-                    <div class="accordion" id="accordionExample" style="margin-top: 8rem;">
+                    <div class="accordion" id="accordionExample" style="margin-top: 5rem;">
 
                         <!-- 2nd menu start -->
-                        <div class="post-menu">
-                            <nav class="navbar navbar-expand-sm">
-                                <div class="container">
-                                    <ul class="navbar-nav list rounded-4 nav-fill py-1"
-                                        style="background-color: #1E3668; width: 93%;">
-                                        <li class="nav-item border-2 border-end border-light">
-                                            <a class="nav-link" data-bs-toggle="collapse" href="#collapsePost"
-                                                role="button" aria-expanded="false" aria-controls="collapsePost">
-                                                <img src="img/post.png" class="" alt="post"
-                                                    style="float: left; padding-left: 10%;">
-                                            </a>
-                                        </li>
-                                        <li class="nav-item border-2 border-end border-light">
-                                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
-                                                href="#collapsePaper" role="button" aria-expanded="false"
-                                                aria-controls="collapsePaper">
-                                                <img src="img/paper.png" class="img-fluid" alt="post">
-                                            </a>
-                                        </li>
-                                        <li class="nav-item border-2 border-end border-light">
-                                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
-                                                href="#collapseQuestion" role="button" aria-expanded="false"
-                                                aria-controls="collapseQuestion">
-                                                <img src="img/question.png" class="img-fluid" alt="post">
-                                            </a>
-                                        </li>
-                                        <li class="nav-item border-2 border-end border-light">
-                                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
-                                                href="#collapseJob" role="button" aria-expanded="false"
-                                                aria-controls="collapseJob">
-                                                <img src="img/job.png" class="img-fluid" alt="post">
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
-                                                href="#collapseCollab" role="button" aria-expanded="false"
-                                                aria-controls="collapseCollab">
-                                                <img src="img/collaboration.png" class="img-fluid" alt="post"
-                                                    style="float: right; padding-right: 10%; width: 3.5rem; height: auto;">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
+
                         <!-- 2nd menu end -->
 
                         <!-- all post here start -->
-                        <div class="accordion-collapse collapse" id="collapsePost" data-bs-parent="#accordionExample"
+                        <div class="accordion-collapse show" id="collapsePost" data-bs-parent="#accordionExample"
                             style="margin-left: 1%; width: 91%;">
                             <div class="card mt-1 border-0">
                                 <!-- Content for POST collapse -->
                                 <div class="card-header h3 bg-transparent border-bottom border-1 border-dark-subtle fw-semibold"
-                                    style="padding-left: 2.5%;">
-                                    <img src="img\post.png" alt="Icon Image" class="icon-img"> Posts
+                                    style="padding-left: 2.5%; font-size: 38px;">
+                                    <img src="img\post.png" alt="Icon Image" class="icon-img"> Requests
                                 </div>
 
                                 <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
@@ -346,13 +227,69 @@
                                                 Akter Bithe</span></span>
                                     </a>
 
-                                    <div class="card-text d-flex justify-content-between">
+
+                                    <div class="">
                                         <p class="text-primary fs-6">Published:<span class="ms-3">Jul 7, 2024 <span
                                                     class="ms-2">11 AM</span></span></p>
+
+
+                                        <button class="btn border-2 rounded-5 fs-6"
+                                            style="background: #6bc7ec; border-color: #1E3668; margin-right: 900px;">Sent</button>
+
 
                                         <div class="d-flex justify-content-end gap-2" style="float: right;">
                                             <button class="btn border-2 rounded-5 fs-6"
                                                 style="background: #FEF067; border-color: #1E3668;">Physics</button>
+
+                                        </div>
+
+                                        <div class="d-flex justify-content-end gap-2" style="float: right;">
+
+                                            <button class="btn border-2 rounded-5 fs-6 px-4"
+                                                style="background: #FEF067; border-color: #1E3668; ">
+                                                <img src="img/comment.png" alt="comment" class="img-fluid"
+                                                    style="width: 20px; height: 15px;">
+                                            </button>
+
+                                            <button class="btn border-2 rounded-5 fs-6 d-flex align-middle"
+                                                style="background: #FEF067; border-color: #1E3668;">
+                                                <img src="img/save.png" alt="" class="img-fluid mt-1 me-2"
+                                                    style="width: 15px; height: 15px;"> <span>Save</span>
+                                            </button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-collapse show" id="collapsePost" data-bs-parent="#accordionExample"
+                            style="margin-left: 1%; width: 91%;">
+                            <div class="card mt-1 border-0">
+                                <!-- Content for POST collapse -->
+
+                                <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
+                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Repellendus vero voluptas voluptate eum eligendi, harum enim aut dolores maiores
+                                        officia!</p>
+
+                                    <a href="link_to_profile" class="text-decoration-none">
+                                        <span class="text-primary fs-6">Authors:<span class="ms-3">Md Musfiqur
+                                                Rahman</span></span>
+                                    </a>
+
+                                    <div class="card-text d-flex justify-content-between">
+                                        <p class="text-primary fs-6">Published:<span class="ms-3">Jul 10, 2024 <span
+                                                    class="ms-2">7 AM</span></span></p>
+
+                                        <div class="d-flex justify-content-end gap-2" style="float: right;">
+                                            <button class="btn border-2 rounded-5 fs-6"
+                                                style="background: #FEF067; border-color: #1E3668;">Biology</button>
                                             <button class="btn border-2 rounded-5 fs-6 px-4"
                                                 style="background: #FEF067; border-color: #1E3668; ">
                                                 <img src="img/comment.png" alt="comment" class="img-fluid"
@@ -373,7 +310,6 @@
                         </div>
 
                         <!-- all post here end -->
-
 
                         <!-- all paper here start -->
                         <div class="accordion-collapse collapse" id="collapsePaper" data-bs-parent="#accordionExample"
@@ -520,7 +456,8 @@
                                 <!-- Content for Collaboration collapse -->
                                 <div class="card-header h3 bg-transparent border-bottom border-1 border-dark-subtle fw-semibold"
                                     style="padding-left: 2.5%;">
-                                    <img src="img\collaboration.png" alt="Icon Image" class="icon-img" style="width: 4%;"> Collaboration
+                                    <img src="img\collaboration.png" alt="Icon Image" class="icon-img"
+                                        style="width: 4%;"> Collaboration
                                 </div>
 
                                 <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
@@ -683,8 +620,8 @@
                             </div>
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="needPostType"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Material Type"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Material Type" required>
                             </div>
                             <div class="form-outline form-white mb-4">
                                 <textarea name="needPostDescription"
@@ -751,13 +688,14 @@
     <!-- Question Forms modal end-->
 
     <!-- Collaboration Forms modal start-->
-    <div class="modal fade rounded-4" id="collabForm" aria-labelledby="collabForm" tabindex="-1"
-        style="display: none;" aria-hidden="true">
+    <div class="modal fade rounded-4" id="collabForm" aria-labelledby="collabForm" tabindex="-1" style="display: none;"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content rounded-5">
                 <div class="modal-header border-0 d-flex mt-5">
                     <img src="img\collaboration.png" alt="Icon-post" class="icon-img img-fluid" style="width: 8%;">
-                    <p class="modal-title fs-4 fw-semibold text-uppercase ms-1" id="staticBackdropLabel">Collaboration</p>
+                    <p class="modal-title fs-4 fw-semibold text-uppercase ms-1" id="staticBackdropLabel">Collaboration
+                    </p>
                     <hr class="border-0 opacity-100 ms-3" style="width: 40%; height: 5px; background-color: #ACDDFD;">
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
@@ -850,8 +788,6 @@
         .custom-file-input {
             background-color: #ACDDFD;
         }
-
-        
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

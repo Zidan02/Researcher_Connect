@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Home</title>
     <style>
         .list {
             column-gap: 1vw;
@@ -164,68 +164,16 @@
 
                     <!-- userimg start -->
                     <form method="post">
-                        <div class="card rounded-4 border-0 align-items-center mt-4">
-                            <img src="profile\default.png" class="card-img-top img-fluid " alt="img"
-                                style=" width: 40%; height: 40%; margin-left: -15%;">
-                            <div class="card-body d-flex flex-column   rounded-4">
-                                <p class="card-text fw-semibold" style="color: #1E3668;"> <i>Mansora Akter Bithe </i>
-                                </p>
-                                <p class="card-text text-left" style="color: #595858; margin-top: -10%;">Engineer</p>
-                            </div>
-                        </div>
+                        
                         <!-- userimage end -->
                         <!-- user description start -->
                         <div class="card text-left text-secondary rounded-4 border-0">
-                            <div class="card-body text-left align-item-center rounded-4"
-                                style=" background-color: white; margin-top: 1rem; margin-bottom: 1rem;">
-                                <div class="d-flex"><img src="img\network.png" class="img-fluid"
-                                        style="width: 15%; height: 25%; padding-top: 5%;" alt="network">
-                                    <p class="card-text fs-5 fw-semibold" style="margin-left: 10%; color: #1E3668;">
-                                        Network</p>
-                                </div>
-                                <div class="d-flex mt-4">
-                                    <p class="card-text fs-5 " style="color: #1E3668;">
-                                        Followers</p>
-                                    <p class="card-text fs-5 " style="margin-left: 20%; color: #1E3668;">
-                                        10</p>
-                                </div>
-                                <div class="d-flex">
-                                    <p class="card-text fs-5 " style="color: #1E3668;">
-                                        Followings</p>
-                                    <p class="card-text fs-5 " style="margin-left: 20%; color: #1E3668;">
-                                        2</p>
-                                </div>
-                                
+                           
 
-                            </div>
-
-                            <div class="card-body rounded-4" style=" background-color: white;  margin-bottom: 1rem;">
-                                <div class="form-group">
-                                    <div class="contact">
-                                        <div class="phone d-flex" style="margin-top: 1.5rem;">
-                                            <img src="img\phnic.png" alt="phnic" class="img-fluid rounded-5"
-                                                style="height: 2.5rem; width: 2.5rem;">
-                                            <input type="tel" class="form-control border-0 shadow rounded-2"
-                                                name="phone" id="phone" placeholder="+8801XXXXXXXXX"
-                                                style="padding: 0.5rem; font-size: 0.7rem;" readonly>
-
-                                        </div>
-                                        <hr class="border-2">
-                                        <div class="email d-flex" style="margin-top: 1rem;">
-                                            <img src="img\emic.png" alt="emic" class="img-fluid rounded-5"
-                                                style="height: 2.5rem; width: 2.5rem;">
-                                            <input type="email" class="form-control border-0 shadow rounded-2"
-                                                name="email" id="email" placeholder="Enter your email address"
-                                                style="padding: 0.5rem; font-size: 0.7rem;" readonly>
-
-                                        </div>
-                                        <hr class="border-2">
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <!-- user contact end -->
                             <!-- user social media start -->
-                            <section class="mb-4 bg-light">
+                            <section class="mb-4 bg-light" style="margin-top: 200%;">
                                 <!-- Facebook -->
                                 <a href=""><img src="img\fb-land.png" alt="Facebook" class="shadow img-fluid "
                                         style="width: 13%; margin-left: 5%;"></a>
@@ -276,7 +224,7 @@
 
 
                     <!-- Parent element to group collapses -->
-                    <div class="accordion" id="accordionExample" style="margin-top: 8rem;">
+                    <div class="accordion" id="accordionExample" style="margin-top: 5rem;">
 
                         <!-- 2nd menu start -->
                         <div class="post-menu">
@@ -288,7 +236,7 @@
                                             <a class="nav-link" data-bs-toggle="collapse" href="#collapsePost"
                                                 role="button" aria-expanded="false" aria-controls="collapsePost">
                                                 <img src="img/post.png" class="" alt="post"
-                                                    style="float: left; padding-left: 10%;">
+                                                    style="float: left; padding-left: 10%; margin-left: 30%;">
                                             </a>
                                         </li>
                                         <li class="nav-item border-2 border-end border-light">
@@ -317,7 +265,7 @@
                                                 href="#collapseCollab" role="button" aria-expanded="false"
                                                 aria-controls="collapseCollab">
                                                 <img src="img/collaboration.png" class="img-fluid" alt="post"
-                                                    style="float: right; padding-right: 10%; width: 3.5rem; height: auto;">
+                                                    style="float: right; padding-right: 10%; width: 3.5rem; height: auto; margin-right: 30%;">
                                             </a>
                                         </li>
                                     </ul>
@@ -372,8 +320,49 @@
                             </div>
                         </div>
 
-                        <!-- all post here end -->
 
+
+                           <div class="accordion-collapse collapse" id="collapsePost" data-bs-parent="#accordionExample"
+                            style="margin-left: 1%; width: 91%;">
+                            <div class="card mt-1 border-0">
+                                <!-- Content for POST collapse -->
+                            
+                                <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
+                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Repellendus vero voluptas voluptate eum eligendi, harum enim aut dolores maiores
+                                        officia!</p>
+
+                                    <a href="link_to_profile" class="text-decoration-none">
+                                        <span class="text-primary fs-6">Authors:<span class="ms-3">Md Musfiqur Rahman</span></span>
+                                    </a>
+
+                                    <div class="card-text d-flex justify-content-between">
+                                        <p class="text-primary fs-6">Published:<span class="ms-3">Jul 10, 2024 <span
+                                                    class="ms-2">7 AM</span></span></p>
+
+                                        <div class="d-flex justify-content-end gap-2" style="float: right;">
+                                            <button class="btn border-2 rounded-5 fs-6"
+                                                style="background: #FEF067; border-color: #1E3668;">Biology</button>
+                                            <button class="btn border-2 rounded-5 fs-6 px-4"
+                                                style="background: #FEF067; border-color: #1E3668; ">
+                                                <img src="img/comment.png" alt="comment" class="img-fluid"
+                                                    style="width: 20px; height: 15px;">
+                                            </button>
+
+                                            <button class="btn border-2 rounded-5 fs-6 d-flex align-middle"
+                                                style="background: #FEF067; border-color: #1E3668;">
+                                                <img src="img/save.png" alt="" class="img-fluid mt-1 me-2"
+                                                    style="width: 15px; height: 15px;"> <span>Save</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- all post here end -->
 
                         <!-- all paper here start -->
                         <div class="accordion-collapse collapse" id="collapsePaper" data-bs-parent="#accordionExample"

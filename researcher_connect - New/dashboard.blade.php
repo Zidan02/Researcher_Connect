@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Navbar</title>
     <style>
         .list {
             column-gap: 1vw;
@@ -46,7 +46,7 @@
                 id="navbarNavDropdown" style="margin-left: 5%; width:auto; margin-top: -5%;">
                 <ul class="navbar-nav list">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="userHome.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -80,18 +80,19 @@
                     <li class="nav-item">
                         <div class="btn-group">
                             <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                <img src="profile\default.png" class="avatar img-fluid" alt=""
+                                <img src="{{ $data->image }}" class="avatar img-fluid" alt=""
                                     style="height: 3rem; width: 3rem;">
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="userProfile.html">Profile</a></li>
-                                <li><a class="dropdown-item" href="editProfile.html">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="" class="text-decoration-none"><button class="btn me-2 rounded-4" name="signout"
-                                id="signout" type="button" style="float:right; background: #1E3668; color: white;"> Log
+                        <a href="{{ url('/') }}" class="text-decoration-none"><button class="btn me-2 rounded-4"
+                                name="signout" id="signout" type="button"
+                                style="float:right; background: #1E3668; color: white;"> Log
                                 Out </button></a>
                     </li>
 
@@ -152,7 +153,8 @@
                                 </li>
                                 <li>
                                     <button type="button" class="btn btn-transparent border-0 text-light"
-                                        data-bs-toggle="modal" data-bs-target="#jobPostForm" data-bs-dismiss="modal">Job
+                                        data-bs-toggle="modal" data-bs-target="#jobPostForm"
+                                        data-bs-dismiss="modal">Job
                                         Post</button>
                                     <hr class="border border-secondary border-1 opacity-75">
                                 </li>
@@ -195,7 +197,12 @@
                                     <p class="card-text fs-5 " style="margin-left: 20%; color: #1E3668;">
                                         2</p>
                                 </div>
-                                
+                                <div class="d-flex">
+                                    <p class="card-text fs-5 " style="color: #1E3668;">
+                                        Suggested</p>
+                                    <p class="card-text fs-5 " style="margin-left: 13%; color: #1E3668;">
+                                        12+</p>
+                                </div>
 
                             </div>
 
@@ -227,16 +234,16 @@
                             <!-- user social media start -->
                             <section class="mb-4 bg-light">
                                 <!-- Facebook -->
-                                <a href=""><img src="img\fb-land.png" alt="Facebook" class="shadow img-fluid "
-                                        style="width: 13%; margin-left: 5%;"></a>
+                                <a href=""><img src="img\fb-land.png" alt="Facebook"
+                                        class="shadow img-fluid " style="width: 13%; margin-left: 5%;"></a>
 
                                 <!-- Instagram -->
-                                <a href=""><img src="img\insta-land.png" alt="Instagram" class="shadow img-fluid"
-                                        style="width: 13%; margin-left: 5%;"></a>
+                                <a href=""><img src="img\insta-land.png" alt="Instagram"
+                                        class="shadow img-fluid" style="width: 13%; margin-left: 5%;"></a>
 
                                 <!-- Linkedin -->
-                                <a href=""><img src="img\link-land.png" alt="Linkedin" class="shadow img-fluid"
-                                        style="width: 13%; margin-left: 5%;"></a>
+                                <a href=""><img src="img\link-land.png" alt="Linkedin"
+                                        class="shadow img-fluid" style="width: 13%; margin-left: 5%;"></a>
 
                                 <!-- Twitter -->
                                 <img src="img\twit-land.png" alt="Facebook" class="shadow img-fluid"
@@ -265,8 +272,9 @@
                         <div class="search">
                             <div class="search-bar">
                                 <form class="d-flex">
-                                    <input class="form-control me-2 rounded-4 shadow border-0 text-dark" type="search"
-                                        placeholder="Search" style="width: 15rem;" aria-label="Search">
+                                    <input class="form-control me-2 rounded-4 shadow border-0 text-dark"
+                                        type="search" placeholder="Search" style="width: 15rem;"
+                                        aria-label="Search">
                                     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                                 </form>
                             </div>
@@ -295,21 +303,21 @@
                                             <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
                                                 href="#collapsePaper" role="button" aria-expanded="false"
                                                 aria-controls="collapsePaper">
-                                                <img src="img/paper.png" class="img-fluid" alt="post">
+                                                <img src="img/paper.png" class="" alt="post">
                                             </a>
                                         </li>
                                         <li class="nav-item border-2 border-end border-light">
                                             <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
                                                 href="#collapseQuestion" role="button" aria-expanded="false"
                                                 aria-controls="collapseQuestion">
-                                                <img src="img/question.png" class="img-fluid" alt="post">
+                                                <img src="img/question.png" class="" alt="post">
                                             </a>
                                         </li>
                                         <li class="nav-item border-2 border-end border-light">
                                             <a class="nav-link" aria-current="page" data-bs-toggle="collapse"
                                                 href="#collapseJob" role="button" aria-expanded="false"
                                                 aria-controls="collapseJob">
-                                                <img src="img/job.png" class="img-fluid" alt="post">
+                                                <img src="img/job.png" class="" alt="post">
                                             </a>
                                         </li>
                                         <li class="nav-item">
@@ -337,7 +345,8 @@
                                 </div>
 
                                 <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
-                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
                                         Repellendus vero voluptas voluptate eum eligendi, harum enim aut dolores maiores
                                         officia!</p>
 
@@ -376,8 +385,8 @@
 
 
                         <!-- all paper here start -->
-                        <div class="accordion-collapse collapse" id="collapsePaper" data-bs-parent="#accordionExample"
-                            style="margin-left: 1%; width: 91%;">
+                        <div class="accordion-collapse collapse" id="collapsePaper"
+                            data-bs-parent="#accordionExample" style="margin-left: 1%; width: 91%;">
                             <div class="card mt-1 border-0">
                                 <!-- Content for PAPER collapse -->
                                 <div class="card-header h3 bg-transparent border-bottom border-1 border-dark-subtle fw-semibold"
@@ -386,7 +395,8 @@
                                 </div>
 
                                 <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
-                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
                                         Repellendus vero voluptas voluptate eum eligendi, harum enim aut dolores maiores
                                         officia!</p>
 
@@ -431,7 +441,8 @@
                                 </div>
 
                                 <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
-                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
                                         Repellendus vero voluptas voluptate eum eligendi, harum enim aut dolores maiores
                                         officia!</p>
 
@@ -476,7 +487,8 @@
                                 </div>
 
                                 <div class="card-body card mt-2 border-bottom border-0 border-dark-subtle rounded-0">
-                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    <p class="card-title fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
                                         Repellendus vero voluptas voluptate eum eligendi, harum enim aut dolores maiores
                                         officia!</p>
 
@@ -513,8 +525,8 @@
                         <!-- all Job post here end -->
 
 
-                        <!-- all Collaboration post here start -->
-                        <div class="accordion-collapse collapse" id="collapseCollab" data-bs-parent="#accordionExample"
+                                                <!-- all Collaboration post here start -->
+                                                <div class="accordion-collapse collapse" id="collapseCollab" data-bs-parent="#accordionExample"
                             style="margin-left: 1%; width: 91%;">
                             <div class="card mt-1 border-0">
                                 <!-- Content for Collaboration collapse -->
@@ -589,20 +601,21 @@
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
                     <div class="container">
-                        <form action="">
+                        <form action="{{ url('/') }}/dashboard/post" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="postTitle"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Title"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Title" required>
                             </div>
                             <div class="form-outline form-white mb-4">
-                                <textarea name="postDescription"
-                                    class="form-control form-control-md form-control-custom shadow"
+                                <textarea name="postDescription" class="form-control form-control-md form-control-custom shadow"
                                     placeholder="Description" required style="height:20vh"></textarea>
                             </div>
                             <div class="form-outline form-white mb-3">
-                                <input class="form-control custom-file-input shadow" type="file" id="formFileMultiple"
-                                    multiple>
+                                <input class="form-control custom-file-input shadow" name="file" type="file"
+                                    id="formFileMultiple" multiple>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-sm text-uppercase text-light px-5 fs-5 rounded-3 shadow"
@@ -623,8 +636,8 @@
 
 
     <!-- Paper Forms modal start-->
-    <div class="modal fade rounded-4" id="paperForm" aria-labelledby="paperForm" tabindex="-1" style="display: none;"
-        aria-hidden="true">
+    <div class="modal fade rounded-4" id="paperForm" aria-labelledby="paperForm" tabindex="-1"
+        style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content rounded-5">
                 <div class="modal-header border-0 d-flex mt-5">
@@ -634,20 +647,21 @@
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
                     <div class="container">
-                        <form action="">
+                        <form action="{{ url('/') }}/dashboard/papers" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="paperTitle"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Title"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Title" required>
                             </div>
                             <div class="form-outline form-white mb-4">
-                                <textarea name="paperDescription"
-                                    class="form-control form-control-md form-control-custom shadow"
+                                <textarea name="paperDescription" class="form-control form-control-md form-control-custom shadow"
                                     placeholder="Description" required style="height:20vh"></textarea>
                             </div>
                             <div class="form-outline form-white mb-3">
-                                <input class="form-control custom-file-input shadow" type="file" id="formFileMultiple"
-                                    multiple>
+                                <input class="form-control custom-file-input shadow" name="file" type="file"
+                                    id="formFileMultiple" multiple>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-sm text-uppercase text-light px-5 fs-5 rounded-3 shadow"
@@ -675,29 +689,25 @@
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
                     <div class="container">
-                        <form action="">
+                        <form action="{{ url('/') }}/dashboard/needpost" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="needPostTitle"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Title"
-                                    required>
-                            </div>
-                            <div class="form-outline form-white mb-3">
-                                <input type="text" name="needPostType"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Material Type"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Title" required>
                             </div>
                             <div class="form-outline form-white mb-4">
-                                <textarea name="needPostDescription"
-                                    class="form-control form-control-md form-control-custom shadow"
+                                <textarea name="needPostDescription" class="form-control form-control-md form-control-custom shadow"
                                     placeholder="Description" required style="height:20vh"></textarea>
                             </div>
                             <div class="form-outline form-white mb-3">
-                                <input class="form-control custom-file-input shadow" type="file" id="formFileMultiple"
-                                    multiple>
+                                <input class="form-control custom-file-input shadow" name="file" type="file"
+                                    id="formFileMultiple" multiple>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-sm text-uppercase text-light px-5 fs-5 rounded-3 shadow"
-                                    type="submit" name="needPosttPost" style="background-color: #1E3668;">Post</button>
+                                    type="submit" name="needPost" style="background-color: #1E3668;">Post</button>
                             </div>
                         </form>
                     </div>
@@ -722,24 +732,26 @@
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
                     <div class="container">
-                        <form action="">
+                        <form action="{{ url('/') }}/dashboard/question" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="questionTitle"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Title"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Title" required>
                             </div>
                             <div class="form-outline form-white mb-4">
-                                <textarea name="questionDescription"
-                                    class="form-control form-control-md form-control-custom shadow"
+                                <textarea name="questionDescription" class="form-control form-control-md form-control-custom shadow"
                                     placeholder="Description" required style="height:20vh"></textarea>
                             </div>
                             <div class="form-outline form-white mb-3">
-                                <input class="form-control custom-file-input shadow" type="file" id="formFileMultiple"
-                                    multiple>
+                                <input class="form-control custom-file-input shadow" name="file" type="file"
+                                    id="formFileMultiple" multiple>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-sm text-uppercase text-light px-5 fs-5 rounded-3 shadow"
-                                    type="submit" name="questionPost" style="background-color: #1E3668;">Post</button>
+                                    type="submit" name="questionPost"
+                                    style="background-color: #1E3668;">Post</button>
                             </div>
                         </form>
                     </div>
@@ -757,25 +769,27 @@
             <div class="modal-content rounded-5">
                 <div class="modal-header border-0 d-flex mt-5">
                     <img src="img\collaboration.png" alt="Icon-post" class="icon-img img-fluid" style="width: 8%;">
-                    <p class="modal-title fs-4 fw-semibold text-uppercase ms-1" id="staticBackdropLabel">Collaboration</p>
+                    <p class="modal-title fs-4 fw-semibold text-uppercase ms-1" id="staticBackdropLabel">Collaboration
+                    </p>
                     <hr class="border-0 opacity-100 ms-3" style="width: 40%; height: 5px; background-color: #ACDDFD;">
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
                     <div class="container">
-                        <form action="">
+                        <form action="{{ url('/') }}/dashboard/collaboration" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="collabTitle"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Title"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Title" required>
                             </div>
                             <div class="form-outline form-white mb-4">
-                                <textarea name="collabDescription"
-                                    class="form-control form-control-md form-control-custom shadow"
+                                <textarea name="collabDescription" class="form-control form-control-md form-control-custom shadow"
                                     placeholder="Description" required style="height:20vh"></textarea>
                             </div>
                             <div class="form-outline form-white mb-3">
-                                <input class="form-control custom-file-input shadow" type="file" id="formFileMultiple"
-                                    multiple>
+                                <input class="form-control custom-file-input shadow" name="file" type="file"
+                                    id="formFileMultiple" multiple>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-sm text-uppercase text-light px-5 fs-5 rounded-3 shadow"
@@ -803,11 +817,13 @@
                 </div>
                 <div class="modal-body" style="margin-top: -5%;">
                     <div class="container">
-                        <form action="">
+                        <form action="{{ url('/') }}/dashboard/jobpost" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="jobPostTitle"
-                                    class="form-control form-control-md form-control-custom shadow" placeholder="Title"
-                                    required>
+                                    class="form-control form-control-md form-control-custom shadow"
+                                    placeholder="Title" required>
                             </div>
                             <div class="form-outline form-white mb-3">
                                 <input type="text" name="companyName"
@@ -817,17 +833,17 @@
 
 
                             <div class="form-outline form-white mb-4">
-                                <textarea name="jobPostDescription"
-                                    class="form-control form-control-md form-control-custom shadow"
+                                <textarea name="jobPostDescription" class="form-control form-control-md form-control-custom shadow"
                                     placeholder="Description" required style="height:20vh"></textarea>
                             </div>
                             <div class="form-outline form-white mb-3">
-                                <input class="form-control custom-file-input shadow" type="file" id="formFileMultiple"
-                                    multiple>
+                                <input class="form-control custom-file-input shadow" name="file" type="file"
+                                    id="formFileMultiple" multiple>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-sm text-uppercase text-light px-5 fs-5 rounded-3 shadow"
-                                    type="submit" name="jobPostPost" style="background-color: #1E3668;">Post</button>
+                                    type="submit" name="jobPostPost"
+                                    style="background-color: #1E3668;">Post</button>
                             </div>
                         </form>
                     </div>
@@ -850,16 +866,14 @@
         .custom-file-input {
             background-color: #ACDDFD;
         }
-
-        
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
